@@ -1,12 +1,12 @@
 {
-  "name": "goit-js-hw-12-countries",
+  "name": "goit-js-hw-13-image-finder",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/vpnzar/goit-js-hw-12-countries",
+  "homepage": "https://github.com/vpnzar/goit-js-hw-13-image-finder",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-13-image-finder/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
@@ -29,7 +29,7 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
-    "gh-pages": "^3.2.3",
-    "lodash.debounce": "^4.0.8"
+    "basiclightbox": "^5.0.4",
+    "gh-pages": "^3.2.3"
   }
 }
