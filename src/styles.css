@@ -61,7 +61,7 @@ form {
 .search_result {
   position: absolute;
   width: 600px;
-  top: 30%;
+  top: 20%;
   left: 100px;
   border-radius: 2px;
   border: 1.5px solid rgb(58, 108, 114);
@@ -117,14 +117,6 @@ form {
   font-size: 13px;
 }
 
-/* .brighttheme-content {
-  display: block;
-  background-color: #f17d0f;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
-  width: 350px;
-} */
 .brighttheme-text {
   display: block;
   background-color: hsl(0, 89%, 63%);
