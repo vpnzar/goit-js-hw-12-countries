@@ -8,14 +8,13 @@ import { alert, defaultModules } from '../../node_modules/@pnotify/core/dist/PNo
 
 const refs = getRefs();
 
-refs.linkInputText.addEventListener('input', onInputChange);
-
-// refs.linkInputText.addEventListener('input', debounce(onInputChange, 1000));
+refs.linkInputText.addEventListener('input', debounce(onInputChange, 500));
 
 function onInputChange(e) {
   e.preventDefault();
+  console.log('сработал дебаунс');
   refs.linkCardMarkup.innerHTML = '';
-  const form = e.currentTarget.value;
+  const form = refs.linkInputText.value;
   refs.linkInputText = form;
   API.fetchCountryName(form)
     .then(result => {
@@ -28,10 +27,8 @@ function onInputChange(e) {
         alert('Try to input more specific name!');
       }
     })
-    .catch(error => alert(error))
-    .finally(() => form.reset());
+    .catch(error => alert(error));
 }
-
 function renderCollection(arr, renderCard) {
   arr.forEach(el => refs.linkCardMarkup.insertAdjacentHTML('afterbegin', renderCard(el)));
 }
