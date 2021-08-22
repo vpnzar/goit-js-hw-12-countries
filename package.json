@@ -1,12 +1,12 @@
 {
   "name": "goit-js-hw-12-countries",
   "version": "1.1.0",
-  "description": "**Читать на других языках: [Русский](README.md), [Українська](README.ua.md).**",
+  "description": "",
   "main": "index.js",
   "homepage": "https://github.com/vpnzar/goit-js-hw-12-countries",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-11-timer/",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
