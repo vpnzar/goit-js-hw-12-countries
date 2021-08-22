@@ -14,24 +14,20 @@ form {
   width: 300px;
   margin: 0 auto;
 }
-.d7 {
+.container {
   background: #7ba7ab;
 }
-.d7:after {
-  content: '';
-  clear: both;
-  display: table;
-}
-.d7 form {
+
+.container form {
   width: auto;
   float: left;
   margin-left: 100px;
 }
-.d7 input {
+.container input {
   width: 250px;
   height: 42px;
   padding-left: 15px;
-  border-radius: 4px;
+  border-radius: 2px;
   border: 2px solid rgb(58, 108, 114);
   background: #f9f0da;
   outline: none;
@@ -39,23 +35,8 @@ form {
   transition: 0.3s linear;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
-.d7 input:focus {
+.container input:focus {
   width: 600px;
-}
-.d7 button {
-  width: 42px;
-  height: 42px;
-  background: none;
-  border: none;
-  position: absolute;
-  top: -2px;
-  right: 0;
-  cursor: pointer;
-}
-.d7 button:before {
-  content: '\f002';
-  font-family: FontAwesome;
-  color: #324b4e;
 }
 
 .search_result {
@@ -83,7 +64,6 @@ form {
 
 .card-title {
   text-align: center;
-
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 28px;
