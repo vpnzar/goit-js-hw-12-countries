@@ -14,13 +14,14 @@ function onInputChange(e) {
   e.preventDefault();
   refs.linkCardMarkup.innerHTML = '';
   const input = refs.linkInputText.value;
-
-  API.fetchCountryName(input)
-    .then(result => handleResult(result))
-    .catch(error => {
-      alert('API request error. See console log');
-      if (error) console.error(error);
-    });
+  if (input !== '') {
+    API.fetchCountryName(input)
+      .then(result => handleResult(result))
+      .catch(error => {
+        alert('API request error. See console log');
+        if (error) console.error(error);
+      });
+  }
 }
 
 function handleResult(result) {
